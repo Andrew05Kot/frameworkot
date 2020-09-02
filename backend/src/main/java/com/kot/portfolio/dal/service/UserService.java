@@ -18,25 +18,4 @@ public class UserService extends AbstractService<UserEntity>{
 	protected BaseCRUDRepository<UserEntity> getRepository() {
 		return userRepository;
 	}
-
-	@Override
-	public Page<UserEntity> findAll(Pageable pageable){
-		return super.findAll(pageable);
-	}
-
-	@Override
-	public UserEntity create(UserEntity userEntity){
-		return super.create(userEntity);
-	}
-
-	@Override
-	public void update(UserEntity entity) {
-		super.update(entity);
-	}
-
-	@Override
-	public void delete(Long id) {
-		super.delete(id);
-	}
-
 }

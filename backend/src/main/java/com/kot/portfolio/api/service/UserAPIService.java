@@ -14,22 +14,29 @@ public class UserAPIService extends AbstractAPIService<UserEntity, UserDTO, User
 	private UserConverter userConverter;
 
 	@Override
-	public UserDTO create(UserDTO request) {
-		return super.create(request);
-	}
-	@Override
 	protected UserEntity getNewEntity(UserDTO request) {
-		return null;
+		UserEntity userEntity = new UserEntity();
+		userEntity.setLastName(request.getFirstName());
+		userEntity.setLastName(request.getLastName());
+		userEntity.setSurname(request.getSurname());
+		userEntity.setFacebookId(request.getFacebookId());
+		userEntity.setPhoneNumber(request.getPhoneNumber());
+		userEntity.setEmail(request.getEmail());
+		return  userEntity;
 	}
 
 	@Override
 	protected void copyProperties(UserDTO request, UserEntity entity) {
-		userConverter.convertToUserDTO(entity);
+		request.setLastName(entity.getFirstName());
+		request.setLastName(entity.getLastName());
+		request.setSurname(entity.getSurname());
+		request.setFacebookId(entity.getFacebookId());
+		request.setPhoneNumber(entity.getPhoneNumber());
+		request.setEmail(entity.getEmail());
 	}
 
 	@Override
 	protected UserDTO convertToResponseBean(UserEntity entity) {
-		return null;
+		return userConverter.convertToUserDTO(entity);
 	}
-
 }

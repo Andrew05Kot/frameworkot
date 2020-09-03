@@ -1,15 +1,13 @@
-package com.kot.portfolio.api.dto;
+package com.kot.portfolio.api.dto.user;
 
 import com.kot.portfolio.api.general.AbstractRequest;
-import com.kot.portfolio.api.general.AbstractResponse;
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class UserDTO implements AbstractRequest, AbstractResponse {
+public class UserRequest implements AbstractRequest {
 
-	private Long id;
 	private String facebookId;
 	private String lastName;
 	private String firstName;

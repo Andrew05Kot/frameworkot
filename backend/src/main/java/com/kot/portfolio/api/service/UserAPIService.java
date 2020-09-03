@@ -1,6 +1,7 @@
 package com.kot.portfolio.api.service;
 
-import com.kot.portfolio.api.dto.UserDTO;
+import com.kot.portfolio.api.dto.user.UserRequest;
+import com.kot.portfolio.api.dto.user.UserResponse;
 import com.kot.portfolio.api.mapper.UserConverter;
 import com.kot.portfolio.dal.entity.UserEntity;
 import com.kot.portfolio.dal.service.UserService;
@@ -8,13 +9,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class UserAPIService extends AbstractAPIService<UserEntity, UserDTO, UserDTO, UserService>{
+public class UserAPIService extends AbstractAPIService<UserEntity, UserRequest, UserResponse, UserService>{
 
 	@Autowired
 	private UserConverter userConverter;
 
 	@Override
-	protected UserEntity getNewEntity(UserDTO request) {
+	protected UserEntity getNewEntity(UserRequest request) {
 		UserEntity userEntity = new UserEntity();
 		userEntity.setLastName(request.getFirstName());
 		userEntity.setLastName(request.getLastName());
@@ -26,7 +27,7 @@ public class UserAPIService extends AbstractAPIService<UserEntity, UserDTO, User
 	}
 
 	@Override
-	protected void copyProperties(UserDTO request, UserEntity entity) {
+	protected void copyProperties(UserRequest request, UserEntity entity) {
 		request.setLastName(entity.getFirstName());
 		request.setLastName(entity.getLastName());
 		request.setSurname(entity.getSurname());
@@ -36,7 +37,7 @@ public class UserAPIService extends AbstractAPIService<UserEntity, UserDTO, User
 	}
 
 	@Override
-	protected UserDTO convertToResponseBean(UserEntity entity) {
-		return userConverter.convertToUserDTO(entity);
+	protected UserResponse convertToResponseBean(UserEntity entity) {
+		return userConverter.convertToUserResponse(entity);
 	}
 }

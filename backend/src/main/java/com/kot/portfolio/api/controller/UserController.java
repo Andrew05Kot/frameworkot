@@ -15,11 +15,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController extends AbstractController<UserEntity, UserRequest, UserResponse, UserService, UserAPIService> {
 
 	@Override
-	public UserResponse create(@RequestBody UserRequest request) {
-		return super.create(request);
-	}
-
-	@Override
 	public void delete(@PathVariable Long id) {
 		throw new UnsupportedOperationException();
 	}

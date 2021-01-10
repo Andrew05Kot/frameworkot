@@ -8,7 +8,7 @@ import lombok.Setter;
 @Setter
 public class UserResponse implements AbstractResponse {
 
-	private Long id;
+	private String id;
 	private String facebookId;
 	private String lastName;
 	private String firstName;

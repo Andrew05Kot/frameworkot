@@ -9,11 +9,11 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Getter
 @Setter
 @ToString
-@Document(collection = "user")
+@Document(collection = "users")
 public class UserEntity implements BaseEntity{
 
 	@Id
-	private Long id;
+	private String id;
 	private String facebookId;
 	private String lastName;
 	private String firstName;

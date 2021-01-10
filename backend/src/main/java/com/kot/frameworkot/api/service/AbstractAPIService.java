@@ -1,10 +1,10 @@
-package com.kot.portfolio.api.service;
+package com.kot.frameworkot.api.service;
 
-import com.kot.portfolio.api.general.AbstractRequest;
-import com.kot.portfolio.api.general.AbstractResponse;
-import com.kot.portfolio.api.general.ResponsePage;
-import com.kot.portfolio.dal.entity.BaseEntity;
-import com.kot.portfolio.dal.service.AbstractService;
+import com.kot.frameworkot.api.general.AbstractRequest;
+import com.kot.frameworkot.api.general.AbstractResponse;
+import com.kot.frameworkot.api.general.ResponsePage;
+import com.kot.frameworkot.dal.entity.BaseEntity;
+import com.kot.frameworkot.dal.service.AbstractService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;

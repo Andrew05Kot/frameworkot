@@ -1,6 +1,6 @@
-package com.kot.portfolio.dal.repository;
+package com.kot.frameworkot.dal.repository;
 
-import com.kot.portfolio.dal.entity.BaseEntity;
+import com.kot.frameworkot.dal.entity.BaseEntity;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.repository.NoRepositoryBean;
 

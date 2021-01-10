@@ -1,4 +1,4 @@
-package com.kot.portfolio.dal.entity;
+package com.kot.frameworkot.dal.entity;
 
 public interface BaseEntity {
 

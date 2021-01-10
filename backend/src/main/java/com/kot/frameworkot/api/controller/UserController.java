@@ -1,12 +1,11 @@
-package com.kot.portfolio.api.controller;
+package com.kot.frameworkot.api.controller;
 
-import com.kot.portfolio.api.dto.user.UserRequest;
-import com.kot.portfolio.api.dto.user.UserResponse;
-import com.kot.portfolio.api.service.UserAPIService;
-import com.kot.portfolio.dal.entity.UserEntity;
-import com.kot.portfolio.dal.service.UserService;
+import com.kot.frameworkot.api.dto.user.UserRequest;
+import com.kot.frameworkot.api.dto.user.UserResponse;
+import com.kot.frameworkot.api.service.UserAPIService;
+import com.kot.frameworkot.dal.entity.UserEntity;
+import com.kot.frameworkot.dal.service.UserService;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

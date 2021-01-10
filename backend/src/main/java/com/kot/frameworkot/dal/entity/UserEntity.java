@@ -1,4 +1,4 @@
-package com.kot.portfolio.dal.entity;
+package com.kot.frameworkot.dal.entity;
 
 import lombok.Getter;
 import lombok.Setter;

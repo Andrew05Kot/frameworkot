@@ -1,6 +1,6 @@
-package com.kot.portfolio.dal.repository;
+package com.kot.frameworkot.dal.repository;
 
-import com.kot.portfolio.dal.entity.UserEntity;
+import com.kot.frameworkot.dal.entity.UserEntity;
 import org.springframework.stereotype.Repository;
 
 @Repository

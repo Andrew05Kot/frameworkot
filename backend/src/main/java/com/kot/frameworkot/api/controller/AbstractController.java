@@ -1,11 +1,11 @@
-package com.kot.portfolio.api.controller;
+package com.kot.frameworkot.api.controller;
 
-import com.kot.portfolio.api.general.AbstractRequest;
-import com.kot.portfolio.api.general.AbstractResponse;
-import com.kot.portfolio.api.general.ResponsePage;
-import com.kot.portfolio.api.service.AbstractAPIService;
-import com.kot.portfolio.dal.entity.BaseEntity;
-import com.kot.portfolio.dal.service.AbstractService;
+import com.kot.frameworkot.api.general.AbstractRequest;
+import com.kot.frameworkot.api.general.AbstractResponse;
+import com.kot.frameworkot.api.general.ResponsePage;
+import com.kot.frameworkot.api.service.AbstractAPIService;
+import com.kot.frameworkot.dal.entity.BaseEntity;
+import com.kot.frameworkot.dal.service.AbstractService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;

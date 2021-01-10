@@ -1,8 +1,8 @@
-package com.kot.portfolio.api.mapper;
+package com.kot.frameworkot.api.mapper;
 
-import com.kot.portfolio.api.dto.user.UserRequest;
-import com.kot.portfolio.api.dto.user.UserResponse;
-import com.kot.portfolio.dal.entity.UserEntity;
+import com.kot.frameworkot.api.dto.user.UserRequest;
+import com.kot.frameworkot.api.dto.user.UserResponse;
+import com.kot.frameworkot.dal.entity.UserEntity;
 import org.springframework.stereotype.Component;
 
 @Component

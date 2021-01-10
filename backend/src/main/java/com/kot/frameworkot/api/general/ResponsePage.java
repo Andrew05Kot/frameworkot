@@ -1,4 +1,4 @@
-package com.kot.portfolio.api.general;
+package com.kot.frameworkot.api.general;
 
 import java.util.List;
 

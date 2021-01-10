@@ -1,7 +1,7 @@
-package com.kot.portfolio.dal.service;
+package com.kot.frameworkot.dal.service;
 
-import com.kot.portfolio.dal.entity.BaseEntity;
-import com.kot.portfolio.dal.repository.BaseCRUDRepository;
+import com.kot.frameworkot.dal.entity.BaseEntity;
+import com.kot.frameworkot.dal.repository.BaseCRUDRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 

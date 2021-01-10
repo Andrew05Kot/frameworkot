@@ -2,7 +2,7 @@ package com.kot.frameworkot.api.service;
 
 import com.kot.frameworkot.api.dto.user.UserRequest;
 import com.kot.frameworkot.api.dto.user.UserResponse;
-import com.kot.frameworkot.api.mapper.UserConverter;
+import com.kot.frameworkot.api.converter.UserConverter;
 import com.kot.frameworkot.dal.entity.UserEntity;
 import com.kot.frameworkot.dal.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package com.kot.frameworkot.api.mapper;
+package com.kot.frameworkot.api.converter;
 
 import com.kot.frameworkot.api.dto.user.UserRequest;
 import com.kot.frameworkot.api.dto.user.UserResponse;

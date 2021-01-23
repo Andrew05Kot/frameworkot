@@ -1,6 +1,7 @@
 package com.kot.frameworkot.api.dto.user;
 
 import com.kot.frameworkot.api.common.AbstractRequest;
+import com.kot.frameworkot.dal.entity.user.UserRole;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -14,4 +15,5 @@ public class UserRequest implements AbstractRequest {
 	private String surname;
 	private String phoneNumber;
 	private String email;
+	private UserRole role;
 }

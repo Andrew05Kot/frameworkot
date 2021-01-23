@@ -16,6 +16,7 @@ public class UserConverter {
 		user.setSocialId(userEntity.getSocialId());
 		user.setPhoneNumber(userEntity.getPhoneNumber());
 		user.setEmail(userEntity.getEmail());
+		user.setRole(userEntity.getRole());
 		return user;
 	}
 
@@ -28,6 +29,7 @@ public class UserConverter {
 		user.setSocialId(userEntity.getSocialId());
 		user.setPhoneNumber(userEntity.getPhoneNumber());
 		user.setEmail(userEntity.getEmail());
+		user.setRole(userEntity.getRole());
 		return user;
 	}
 

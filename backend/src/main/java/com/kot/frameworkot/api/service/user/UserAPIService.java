@@ -24,6 +24,7 @@ public class UserAPIService extends AbstractAPIService<UserEntity, UserRequest, 
 		userEntity.setSocialId(request.getSocialId());
 		userEntity.setPhoneNumber(request.getPhoneNumber());
 		userEntity.setEmail(request.getEmail());
+		userEntity.setRole(request.getRole());
 		return  userEntity;
 	}
 
@@ -35,6 +36,7 @@ public class UserAPIService extends AbstractAPIService<UserEntity, UserRequest, 
 		request.setSocialId(entity.getSocialId());
 		request.setPhoneNumber(entity.getPhoneNumber());
 		request.setEmail(entity.getEmail());
+		request.setRole(entity.getRole());
 	}
 
 	@Override

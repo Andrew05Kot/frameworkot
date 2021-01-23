@@ -1,6 +1,7 @@
 package com.kot.frameworkot.api.dto.user;
 
 import com.kot.frameworkot.api.common.AbstractResponse;
+import com.kot.frameworkot.dal.entity.user.UserRole;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -15,5 +16,6 @@ public class UserResponse implements AbstractResponse {
 	private String surname;
 	private String phoneNumber;
 	private String email;
+	private UserRole role;
 
 }

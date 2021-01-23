@@ -1,15 +1,16 @@
-package com.kot.frameworkot.api.service;
+package com.kot.frameworkot.api.service.user;
 
 import com.kot.frameworkot.api.dto.user.UserRequest;
 import com.kot.frameworkot.api.dto.user.UserResponse;
-import com.kot.frameworkot.api.converter.UserConverter;
-import com.kot.frameworkot.dal.entity.UserEntity;
-import com.kot.frameworkot.dal.service.UserService;
+import com.kot.frameworkot.api.converter.user.UserConverter;
+import com.kot.frameworkot.api.service.AbstractAPIService;
+import com.kot.frameworkot.dal.entity.user.UserEntity;
+import com.kot.frameworkot.dal.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class UserAPIService extends AbstractAPIService<UserEntity, UserRequest, UserResponse, UserService>{
+public class UserAPIService extends AbstractAPIService<UserEntity, UserRequest, UserResponse, UserService> {
 
 	@Autowired
 	private UserConverter userConverter;
@@ -20,7 +21,7 @@ public class UserAPIService extends AbstractAPIService<UserEntity, UserRequest, 
 		userEntity.setLastName(request.getFirstName());
 		userEntity.setLastName(request.getLastName());
 		userEntity.setSurname(request.getSurname());
-		userEntity.setFacebookId(request.getFacebookId());
+		userEntity.setSocialId(request.getSocialId());
 		userEntity.setPhoneNumber(request.getPhoneNumber());
 		userEntity.setEmail(request.getEmail());
 		return  userEntity;
@@ -31,7 +32,7 @@ public class UserAPIService extends AbstractAPIService<UserEntity, UserRequest, 
 		request.setLastName(entity.getFirstName());
 		request.setLastName(entity.getLastName());
 		request.setSurname(entity.getSurname());
-		request.setFacebookId(entity.getFacebookId());
+		request.setSocialId(entity.getSocialId());
 		request.setPhoneNumber(entity.getPhoneNumber());
 		request.setEmail(entity.getEmail());
 	}

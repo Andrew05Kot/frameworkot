@@ -1,8 +1,8 @@
 package com.kot.frameworkot.api.controller;
 
-import com.kot.frameworkot.api.general.AbstractRequest;
-import com.kot.frameworkot.api.general.AbstractResponse;
-import com.kot.frameworkot.api.general.ResponsePage;
+import com.kot.frameworkot.api.common.AbstractRequest;
+import com.kot.frameworkot.api.common.AbstractResponse;
+import com.kot.frameworkot.api.common.ResponsePage;
 import com.kot.frameworkot.api.service.AbstractAPIService;
 import com.kot.frameworkot.dal.entity.BaseEntity;
 import com.kot.frameworkot.dal.service.AbstractService;

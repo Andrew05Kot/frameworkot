@@ -1,6 +1,6 @@
 package com.kot.frameworkot.api.dto.user;
 
-import com.kot.frameworkot.api.general.AbstractRequest;
+import com.kot.frameworkot.api.common.AbstractRequest;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -8,9 +8,9 @@ import lombok.Setter;
 @Setter
 public class UserRequest implements AbstractRequest {
 
-	private String facebookId;
-	private String lastName;
+	private String socialId;
 	private String firstName;
+	private String lastName;
 	private String surname;
 	private String phoneNumber;
 	private String email;

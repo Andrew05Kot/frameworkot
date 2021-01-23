@@ -24,11 +24,10 @@ public class AuthorizationHandler {
     private UserService userService;
 
     public UserEntity createUser(Map<String, Object> facebookUserAttributes, String accessToken) {
-        UserEntity userEntity = createUserInDB(facebookUserAttributes);
-        return userEntity;
+        return saveUserEntity(facebookUserAttributes);
     }
 
-    UserEntity createUserInDB(Map<String, Object> facebookUserAttributes) {
+    UserEntity saveUserEntity(Map<String, Object> facebookUserAttributes) {
         UserEntity user = new UserEntity();
         user.setSocialId(facebookUserAttributes.get(ID).toString());
 

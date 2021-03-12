@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 import com.kot.frameworkot.dal.entity.user.UserEntity;
 import com.kot.frameworkot.dal.entity.user.UserPrincipal;
 import com.kot.frameworkot.dal.repository.user.UserRepository;
-import com.kot.frameworkot.dal.security.AuthorizationHandler;
+import com.kot.frameworkot.dal.security.FacebookAuthorizationHandler;
 
 @Component
 public class CustomUserDetailsService implements UserDetailsService {
@@ -19,7 +19,7 @@ public class CustomUserDetailsService implements UserDetailsService {
     private UserRepository userRepository;
 
     @Autowired
-    private AuthorizationHandler authorizationHandler;
+    private FacebookAuthorizationHandler facebookAuthorizationHandler;
 
     @Override
     public UserPrincipal loadUserByUsername(String socialId) {
@@ -28,8 +28,8 @@ public class CustomUserDetailsService implements UserDetailsService {
         return UserPrincipal.create(user);
     }
 
-    public UserEntity findUser(OAuth2User oAuth2User, String accessToken) {
+    public UserEntity findOrCreateUser(OAuth2User oAuth2User, String accessToken) {
         return userRepository.findBySocialId(oAuth2User.getAttribute(ID))
-                .orElseGet(() -> authorizationHandler.createUser(oAuth2User.getAttributes(), accessToken));
+                .orElseGet(() -> facebookAuthorizationHandler.createUser(oAuth2User.getAttributes(), accessToken));
     }
 }

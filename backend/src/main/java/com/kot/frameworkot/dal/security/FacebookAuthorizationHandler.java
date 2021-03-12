@@ -10,9 +10,7 @@ import com.kot.frameworkot.dal.entity.user.UserRole;
 import com.kot.frameworkot.dal.service.user.UserService;
 
 @Service
-public class AuthorizationHandler {
-
-    public static final String USER_ID_ATTRIBUTE = "user_id";
+public class FacebookAuthorizationHandler {
 
     private static final String ID = "id";
     private static final String EMAIL = "email";

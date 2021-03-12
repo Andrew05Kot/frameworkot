@@ -21,8 +21,7 @@ public class ApplicationOAuth2UserService extends DefaultOAuth2UserService {
     }
 
     public UserPrincipal buildPrincipal(OAuth2User oAuth2User, String accessToken) {
-        UserEntity user = userDetailsService.findUser(oAuth2User, accessToken);
-
+        UserEntity user = userDetailsService.findOrCreateUser(oAuth2User, accessToken);
         return UserPrincipal.create(user, oAuth2User.getAttributes());
     }
 
